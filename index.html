@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lan="en">
+
+<head> 
+    
+    <link rel="icon" type="image/png" href="favicon.png">  
+
+    <title> OneBodyOnelife </title>
+ 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  
+     <link href="style.css" type="text/css" rel="stylesheet">
+    
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  
+    
+      <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    
+    
+      <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/> 
+    
+
+</head>
+
+
+
+<body>
+
+
+
+     
+    <navbar>
+   
+        <a href="#"><li>HOME</li></a>
+        <a href="about.html"><li>ABOUT</li></a>
+        <a href="contact.html"><li>CONTACT</li></a>
+     
+     
+     </navbar>
+    
+    
+ 
+        
+    
+     <div class="header">
+         
+         
+         <div id="slides">
+         
+     <img  class="slide showing" src="OnebodyOnelife.jpg"> 
+         
+     <img  class="slide"  src="onebody.jpg" >
+          
+     <img  class="slide"  src="Onelife.jpg">
+             
+         </div>
+         
+     
+     </div>
+
+ 
+    
+    
+
+  
+   <div  class="content">
+
+
+    <div class="article1">
+        
+     <p>Personal training that’s high quality and fun. I offer custom-made training for every condition and body shape. I always make sure to adapt my sessions to my client’s requirements.  We can work at the gym or the most convenient location. I cover London and some suburban areas.</p>  
+        
+             
+      <img class="pic1" src="onebodyonelife1.jpg">  
+
+
+    </div>
+       
+
+    
+       
+  
+    
+    
+    <div class="article2">
+        
+        
+        <img  class="pic2" src="onebodyonelife2.jpg">  
+    
+   <p>We work together and carefully set targets, making sure I understand your needs. I take the time to draw a convenient plan so we can make progress towards specific goals. My success is your success. Let’s start.</p>  
+        
+       
+  
+        
+        
+    </div>
+       
+       
+ 
+       
+
+
+     <div class="form"></div>
+
+
+
+  </div>
+        
+    
+    
+    
+    
+    
+<footer>
+    
+    <div id="map"></div>
+    
+    
+        </footer>
+    
+    
+    
+    
+    <div class="social-media">
+    
+    
+        <div class="container">
+        
+        
+    <a href="https://www.facebook.com/Onebodyonelife-103698378018516/?view_public_for=103698378018516" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/OnelifeOnebody" target="_blank" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/hellonebody/?hl=en" target="_blank" class="fa fa-instagram"></a>
+            
+            <div>
+                
+    
+    </div>
+    
+    
+    
+  
+
+
+
+    <script>
+    
+   var slides = document.querySelectorAll('#slides .slide');
+   var currentSlide = 0;
+   var  slideInterval = setInterval(nextSlide, 2000);
+    
+  function nextSlide() {
+      
+   slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+      slides[currentSlide].className = 'slide showing';
+      
+  }
+    
+    
+ </script>
+    
+    
+   
+<script type="text/javascript">
+ window.onload = function() {
+  L.mapquest.key = '3bqs5036IH1rspjYxGYV4zqsMxZm5Nq8';
+
+// 'map' refers to a <div> element with the ID map
+L.mapquest.map('map', {
+  center: [51.509865, -0.118092],
+  layers: L.mapquest.tileLayer('map'),
+  zoom: 12
+});
+    
+map.addControl(L.mapquest.control());
+      }   
+    
+    
+    </script>
+    
+    
+    
+    
+
+    
+    
+
+</body>
+
+
+</html>
